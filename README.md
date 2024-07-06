@@ -56,7 +56,7 @@ Add the following to your `pubspec.yaml` file:
 
 ``` yaml
 dependencies:
-  error_stack: ^1.7.3
+  error_stack: ^1.8.0
 ```
 
 or with Dart:
@@ -76,6 +76,19 @@ The package is very simple to use.
 
 You can set the log level when initializing Error Stack.
 
+#### Flutter App
+
+``` dart
+import 'package:flutter/material.dart';
+import 'package:error_stack/error_stack.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await ErrorStack.init(logLevel: ErrorStackLogLevel.minimal); // Initialize Error Stack
+  runApp(MyApp());
+}
+```
+
 #### Nylo
 
 ``` dart
@@ -88,19 +101,6 @@ class AppProvider {
      ...
      nylo.useErrorStack(logLevel: ErrorStackLogLevel.minimal);
   }
-}
-```
-
-#### Flutter App
-
-``` dart
-import 'package:flutter/material.dart';
-import 'package:error_stack/error_stack.dart';
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await ErrorStack.init(logLevel: ErrorStackLogLevel.minimal); // Initialize Error Stack
-  runApp(MyApp());
 }
 ```
 

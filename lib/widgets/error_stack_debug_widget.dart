@@ -13,7 +13,6 @@ import 'dart:io' show Platform;
 /// It also allows the user to search for the error on Google
 /// and restart the app
 class ErrorStackDebugWidget extends StatefulWidget {
-  static const path = '/error-stack-debug';
   final FlutterErrorDetails errorDetails;
 
   const ErrorStackDebugWidget({super.key, required this.errorDetails});
@@ -84,7 +83,7 @@ class _ErrorStackDebugWidget extends State<ErrorStackDebugWidget> {
           padding: EdgeInsets.zero,
           children: [
             SizedBox(
-              height: 550,
+              height: 580,
               child: Stack(
                 children: [
                   Positioned.fill(
@@ -144,6 +143,7 @@ class _ErrorStackDebugWidget extends State<ErrorStackDebugWidget> {
                                             className(),
                                             textAlign: TextAlign.left,
                                             maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
                                             style: TextStyle(
                                               fontSize: 12.0,
                                               color: Colors.grey.shade600,
@@ -195,6 +195,8 @@ class _ErrorStackDebugWidget extends State<ErrorStackDebugWidget> {
                                     child: Text(
                                       widget.errorDetails.exceptionAsString(),
                                       textAlign: TextAlign.center,
+                                      maxLines: 5,
+                                      overflow: TextOverflow.ellipsis,
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: _hexColor("#d8b576"),

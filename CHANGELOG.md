@@ -1,3 +1,9 @@
+## [1.8.0] - 2024-07-06
+
+* Update default height of the debug widget to 580.0
+* Set maxLines to 5 for the `exceptionAsString` value in the debug widget
+* Update README.md
+
 ## [1.7.3] - 2024-06-15
 
 * Update README.md
