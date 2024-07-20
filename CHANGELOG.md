@@ -1,3 +1,7 @@
+## [1.8.1] - 2024-07-20
+
+* Update debug widget
+
 ## [1.8.0] - 2024-07-06
 
 * Update default height of the debug widget to 580.0
