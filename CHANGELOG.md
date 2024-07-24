@@ -1,3 +1,7 @@
+## [1.9.0] - 2024-07-24
+
+* Merge PR from @SalihCanBinboga to allow the debug widget to be shown in release mode  
+
 ## [1.8.1] - 2024-07-20
 
 * Update debug widget

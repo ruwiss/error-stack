@@ -7,6 +7,20 @@
 
 ### Simple to use
 
+#### Flutter App
+
+``` dart
+// Add Error Stack to your main.dart file
+...
+import 'package:error_stack/error_stack.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await ErrorStack.init(); // Initialize Error Stack
+  runApp(MyApp());
+}
+```
+
 #### Nylo
 
 ``` dart
@@ -21,20 +35,6 @@ class AppProvider {
     ...
     nylo.useErrorStack(); // enables Error Stack
   }
-}
-```
-
-#### Flutter App
-
-``` dart
-// Add Error Stack to your main.dart file
-...
-import 'package:error_stack/error_stack.dart';
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await ErrorStack.init(); // Initialize Error Stack
-  runApp(MyApp());
 }
 ```
 
@@ -56,7 +56,7 @@ Add the following to your `pubspec.yaml` file:
 
 ``` yaml
 dependencies:
-  error_stack: ^1.8.1
+  error_stack: ^1.9.0
 ```
 
 or with Dart:
