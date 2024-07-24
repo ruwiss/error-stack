@@ -39,13 +39,14 @@ class ErrorStack {
     ErrorStackLogLevel level = ErrorStackLogLevel.verbose,
     String initialRoute = "/",
     Widget Function(FlutterErrorDetails errorDetails)? errorWidget,
+    bool forceDebugWidget = false,
   }) async {
     ErrorStack.instance.initialRoute = initialRoute;
     ErrorStack.instance.themeMode = await ErrorStack.instance.storage
             .read(key: '${ErrorStack.storageKey}_theme_mode') ??
         'light';
     ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
-      if (kReleaseMode) {
+      if (kReleaseMode && !forceDebugWidget) {
         if (errorWidget != null) {
           return errorWidget(errorDetails);
         }
