@@ -1,3 +1,4 @@
+// ignore: unnecessary_library_name
 library error_stack;
 
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';

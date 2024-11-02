@@ -1,6 +1,6 @@
 name: error_stack
 description: "ErrorStack helps you swiftly deal with errors in your Flutter applications! Custom error handling UI and logging to keep you productive."
-version: 1.9.0
+version: 1.10.0
 homepage: https://nylo.dev
 repository: https://github.com/nylo-core/error-stack/tree/1.x
 issue_tracker: https://github.com/nylo-core/error-stack/issues
@@ -19,14 +19,14 @@ environment:
 
 dependencies:
   flutter_secure_storage: ^9.2.2
-  url_launcher: ^6.3.0
+  url_launcher: ^6.3.1
   flutter:
     sdk: flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^5.0.0
 
 screenshots:
   - description: The Error Stack logo.

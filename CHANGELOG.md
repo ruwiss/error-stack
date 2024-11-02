@@ -1,3 +1,12 @@
+## [1.10.0] - 2024-11-02
+
+* Refactor as per flutter_lints suggestions
+* Update the pubspec.yaml
+
+## [1.9.1] - 2024-08-09
+
+* Update debug widget
+
 ## [1.9.0] - 2024-07-24
 
 * Merge PR from @SalihCanBinboga to allow the debug widget to be shown in release mode  
