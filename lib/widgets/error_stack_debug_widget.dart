@@ -161,8 +161,8 @@ class _ErrorStackDebugWidget extends State<ErrorStackDebugWidget> {
                                                 : Colors.white),
                                         onPressed: () async {
                                           await Clipboard.setData(ClipboardData(
-                                                  text:
-                                                      "${widget.errorDetails.exceptionAsString()} flutter"));
+                                              text:
+                                                  "${widget.errorDetails.exceptionAsString()} flutter"));
                                           _showCopiedSnackBar();
                                         },
                                       )
@@ -359,13 +359,11 @@ class _ErrorStackDebugWidget extends State<ErrorStackDebugWidget> {
 
   /// Display a snack bar when the text is copied
   _showCopiedSnackBar() {
-    ScaffoldMessenger.of(context)
-        .showSnackBar(const SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text(
-          'Copied to your clipboard!',
-          style: TextStyle(
-              fontWeight: FontWeight.w600),
-        )));
+      'Copied to your clipboard!',
+      style: TextStyle(fontWeight: FontWeight.w600),
+    )));
   }
 
   /// Get the color from a hex string
